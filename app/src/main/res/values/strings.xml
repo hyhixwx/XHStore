@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">xhandroid</string>
+    <string name="icon_home">&#xe8c6;</string>
+    <string name="icon_recommend">&#xe63f;</string>
+    <string name="icon_chat">&#xe63c;</string>
+    <string name="icon_profile">&#xe634;</string>
+    <string name="icon_category">&#xe600;</string>
+    <string name="icon_favorite">&#xe639;</string>
+</resources>
