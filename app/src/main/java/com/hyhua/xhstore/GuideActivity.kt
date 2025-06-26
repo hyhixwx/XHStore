@@ -3,9 +3,12 @@ package com.hyhua.xhstore
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.hyhua.xhcommon.ui.component.XHBaseActivity
 import com.hyhua.xhstore.test.XHBannerDemoActivity
 import com.hyhua.xhstore.test.XHDataItemDemoActivity
+import com.hyhua.xhstore.test.XHExecutorDemoActivity
 import com.hyhua.xhstore.test.XHLogDemoActivity
 import com.hyhua.xhstore.test.XHRefreshDemoActivity
 import com.hyhua.xhstore.test.XHTabBottomDemoActivity
@@ -16,6 +19,13 @@ class GuideActivity : XHBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guide)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
         initTestEntrance()
     }
 
@@ -90,6 +100,16 @@ class GuideActivity : XHBaseActivity() {
                 Intent(
                     this,
                     XHDataItemDemoActivity::class.java
+                )
+            )
+        }
+        val btn8 = findViewById<Button>(R.id.btn_8)
+        btn8.text = "XHExecutor"
+        btn8.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    XHExecutorDemoActivity::class.java
                 )
             )
         }

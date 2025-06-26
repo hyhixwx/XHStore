@@ -14,33 +14,29 @@
         android:theme="@style/Theme.XHStoreAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".test.XHExecutorDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".test.XHDataItemDemoActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".test.XHBannerDemoActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".test.XHRefreshDemoActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".test.XHTabTopDemoActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".test.XHTabBottomDemoActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".test.XHLogDemoActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".GuideActivity"
             android:exported="true">

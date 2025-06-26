@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="XHStoreAndroid.mylibrary" target="21" />
+      <module name="XHStoreAndroid.xh_executor" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

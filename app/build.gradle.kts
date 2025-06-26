@@ -55,6 +55,8 @@ dependencies {
     implementation(libs.gson)
     // 图片加载
     implementation(libs.glide)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     annotationProcessor(libs.glide.compiler)
     // 基础支持库
     implementation(project(":xh_library"))
