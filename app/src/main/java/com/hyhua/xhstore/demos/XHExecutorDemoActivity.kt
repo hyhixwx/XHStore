@@ -1,4 +1,4 @@
-package com.hyhua.xhstore.test
+package com.hyhua.xhstore.demos
 
 import android.os.Bundle
 import android.util.Log
@@ -21,16 +21,16 @@ class XHExecutorDemoActivity : AppCompatActivity() {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+            insetszhon
         }
 
         val btn1 = findViewById<Button>(R.id.btn_1)
         btn1.setOnClickListener {
-            for (priority in 0..9) {
+            for (priority in 0..10) {
                 val finalPriority = priority
                 XHExecutor.execute(finalPriority) {
                     try {
-                        Thread.sleep(10000) // 10秒长时间任务
+                        Thread.sleep((1000 - priority * 100).toLong())
                     } catch (e: InterruptedException) {
                         e.printStackTrace()
                     }
@@ -54,13 +54,13 @@ class XHExecutorDemoActivity : AppCompatActivity() {
                 runnable = object : XHExecutor.Callable<String>() {
 
                     override fun onBackground(): String {
-                        Log.e("XHExecutorDemoActivity", "onBackground-当前线程是：" + Thread.currentThread().name)
+                        Log.d("XHExecutorDemoActivity", "onBackground-当前线程是：" + Thread.currentThread().name)
                         return "我是异步任务的结果"
                     }
 
                     override fun onCompleted(result: String) {
-                        Log.e("XHExecutorDemoActivity", "onCompleted-当前线程是：" + Thread.currentThread().name)
-                        Log.e("XHExecutorDemoActivity", "onCompleted-任务结果是：$result")
+                        Log.d("XHExecutorDemoActivity", "onCompleted-当前线程是：" + Thread.currentThread().name)
+                        Log.d("XHExecutorDemoActivity", "onCompleted-任务结果是：$result")
                     }
 
                 })

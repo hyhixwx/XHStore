@@ -1,4 +1,4 @@
-package com.hyhua.xhstore.test;
+package com.hyhua.xhstore.demos.data_item;
 
 import android.widget.ImageView;
 

@@ -1,10 +1,12 @@
-package com.hyhua.xhstore.test
+package com.hyhua.xhstore.demos.data_item
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hyhua.xhstore.R
+import com.hyhua.xhstore.demos.GridDataItem
+import com.hyhua.xhstore.demos.TopBanner
 import com.hyhua.xhui.item.XHAdapter
 import com.hyhua.xhui.item.XHDataItem
 

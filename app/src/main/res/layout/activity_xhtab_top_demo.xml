@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".test.XHTabTopDemoActivity">
+    tools:context=".demos.XHTabTopDemoActivity">
 
     <com.hyhua.xhui.tab.top.XHTabTopLayout
         android:id="@+id/tab_top_layout"

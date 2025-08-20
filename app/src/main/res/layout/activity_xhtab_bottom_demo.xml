@@ -4,7 +4,7 @@
     android:id="@+id/xhTabLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".test.XHTabBottomDemoActivity">
+    tools:context=".demos.XHTabBottomDemoActivity">
 
     <ScrollView
         android:layout_width="match_parent"

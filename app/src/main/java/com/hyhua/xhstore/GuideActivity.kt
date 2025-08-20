@@ -6,13 +6,13 @@ import android.widget.Button
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.hyhua.xhcommon.ui.component.XHBaseActivity
-import com.hyhua.xhstore.test.XHBannerDemoActivity
-import com.hyhua.xhstore.test.XHDataItemDemoActivity
-import com.hyhua.xhstore.test.XHExecutorDemoActivity
-import com.hyhua.xhstore.test.XHLogDemoActivity
-import com.hyhua.xhstore.test.XHRefreshDemoActivity
-import com.hyhua.xhstore.test.XHTabBottomDemoActivity
-import com.hyhua.xhstore.test.XHTabTopDemoActivity
+import com.hyhua.xhstore.demos.XHBannerDemoActivity
+import com.hyhua.xhstore.demos.data_item.XHDataItemDemoActivity
+import com.hyhua.xhstore.demos.XHExecutorDemoActivity
+import com.hyhua.xhstore.demos.XHLogDemoActivity
+import com.hyhua.xhstore.demos.XHRefreshDemoActivity
+import com.hyhua.xhstore.demos.XHTabBottomDemoActivity
+import com.hyhua.xhstore.demos.XHTabTopDemoActivity
 
 class GuideActivity : XHBaseActivity() {
 
@@ -93,8 +93,7 @@ class GuideActivity : XHBaseActivity() {
             )
         }
 
-        val btn7 = findViewById<Button>(R.id.btn_7)
-        btn7.text = "XHDataItem"
+        val btn7 = findViewById<Button>(R.id.btn_7) 
         btn7.setOnClickListener {
             startActivity(
                 Intent(

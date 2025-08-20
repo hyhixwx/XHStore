@@ -1,9 +1,10 @@
-package com.hyhua.xhstore.test
+package com.hyhua.xhstore.demos
 
 import android.view.View
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.hyhua.xhstore.R
+import com.hyhua.xhstore.demos.data_item.ItemData
 import com.hyhua.xhui.item.XHDataItem
 
 class GridDataItem(data: ItemData) : XHDataItem<ItemData, GridDataItem.MyHolder>(data) {

@@ -1,8 +1,9 @@
-package com.hyhua.xhstore.test
+package com.hyhua.xhstore.demos
 
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.hyhua.xhstore.R
+import com.hyhua.xhstore.demos.data_item.ItemData
 import com.hyhua.xhui.item.XHDataItem
 
 class TopBanner(data: ItemData) : XHDataItem<ItemData, RecyclerView.ViewHolder>(data) {

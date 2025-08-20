@@ -1,4 +1,4 @@
-package com.hyhua.xhstore.test
+package com.hyhua.xhstore.demos
 
 import android.graphics.BitmapFactory
 import android.os.Bundle

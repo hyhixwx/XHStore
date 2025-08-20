@@ -42,6 +42,7 @@ object XHExecutor {
          * cpu可用处理器数量
          */
         val cpuCount = Runtime.getRuntime().availableProcessors()
+        Log.i(TAG, "cpuCount: $cpuCount")
 
         /**
          * 核心线程数
@@ -104,7 +105,9 @@ object XHExecutor {
     }
 
     /**
-     * 处理任务
+     * 处理任务。
+     *
+     * 优先级只能影响获取CPU时间片的概率，不能保证优先级高一定会先执行。
      */
     @JvmOverloads // 用于自动生成重载方法，使Java调用者不必传递所有参数
     fun execute(@IntRange(from = 0, to = 10) priority: Int = 0, runnable: Runnable) {
@@ -138,7 +141,7 @@ object XHExecutor {
         }
 
         override fun compareTo(other: PriorityRunnable): Int {
-            // priority值越小，优先级越高
+            // priority值越大，优先级越高
             return if (this.priority < other.priority) 1 else if (this.priority > other.priority) -1 else 0
         }
     }
